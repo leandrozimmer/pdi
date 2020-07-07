@@ -12,7 +12,7 @@ RUN sh -c "cd /opt && curl -JLO https://sourceforge.net/projects/pentaho/files/P
 
 RUN curl -JLO "https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.48.tar.gz" \
   && tar -zxvf mysql-connector-java-5.1.48.tar.gz \
-  && cp mysql-connector-java-5.1.48/mysql-connector-java-5.1.48-bin.jar /opt/data-integration/lib/
+  && cp mysql-connector-java-5.1.48/mysql-connector-java-5.1.48-bin.jar /opt/data-integration/lib/ \
   && rm mysql-connector-java-5.1.48.tar.gz \
   && rm -r mysql-connector-java-5.1.48
  
